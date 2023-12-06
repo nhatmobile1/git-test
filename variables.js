@@ -26,3 +26,32 @@
 // alert(`hello ${"name"}`);
 
 // alert(`hello ${name}`);
+// const hour = new Date().getHours();
+// let greeting;
+
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+
+// let age = 50;
+
+// if (age < 14 || age > 90);
+
+let login = prompt("Who's there?");
+
+if (login === "Admin") {
+  let password = prompt("Enter the password");
+  if (password === "TheMaster") {
+    alert("Welcome!");
+  } else if (password === null || password === "") {
+    alert("Canceled");
+  } else {
+    alert("Wrong Password");
+  }
+} else if (login === null || login === "") {
+  alert("Canceled");
+} else {
+  alert("I dont know you");
+}
