@@ -39,19 +39,33 @@
 
 // if (age < 14 || age > 90);
 
-let login = prompt("Who's there?");
+//----- Conditional exercise -----//
 
-if (login === "Admin") {
-  let password = prompt("Enter the password");
-  if (password === "TheMaster") {
-    alert("Welcome!");
-  } else if (password === null || password === "") {
-    alert("Canceled");
-  } else {
-    alert("Wrong Password");
-  }
-} else if (login === null || login === "") {
-  alert("Canceled");
+// let login = prompt("Who's there?");
+
+// if (login === "Admin") {
+//   let password = prompt("Enter the password");
+//   if (password === "TheMaster") {
+//     alert("Welcome!");
+//   } else if (password === null || password === "") {
+//     alert("Canceled");
+//   } else {
+//     alert("Wrong Password");
+//   }
+// } else if (login === null || login === "") {
+//   alert("Canceled");
+// } else {
+//   alert("I dont know you");
+// }
+
+let shoppingDone = false;
+let childsAllowance;
+
+// We don't need to explicitly specify 'shoppingDone === true'
+if (shoppingDone) {
+  childsAllowance = 10;
 } else {
-  alert("I dont know you");
+  childsAllowance = 5;
 }
+
+alert(childsAllowance);
