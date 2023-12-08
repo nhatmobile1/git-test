@@ -1,44 +1,3 @@
-// let a = prompt("First number?", 1);
-// let b = prompt("Second number?", 2);
-
-// alert(+a + +b);
-// console.log(23 + 97);
-
-// console.log(1 + 2 + 4 + 5 + 6 + 10 + 200);
-
-// let mathEx = (4 + 6 + 9) / 77;
-
-// console.log(mathEx);
-//
-
-// const maxNum = 57;
-
-// let actual = maxNum - 13;
-
-// let percentage = actual / maxNum;
-
-// Three ways to decalre variable: var, let, const
-
-// let name = "nhat";
-
-// alert(`hello ${1}`);
-
-// alert(`hello ${"name"}`);
-
-// alert(`hello ${name}`);
-// const hour = new Date().getHours();
-// let greeting;
-
-// if (hour < 18) {
-//   greeting = "Good day";
-// } else {
-//   greeting = "Good evening";
-// }
-
-// let age = 50;
-
-// if (age < 14 || age > 90);
-
 //----- Conditional exercise -----//
 
 // let login = prompt("Who's there?");
@@ -58,14 +17,110 @@
 //   alert("I dont know you");
 // }
 
-let shoppingDone = false;
-let childsAllowance;
+// let shoppingDone = false;
+// let childsAllowance;
 
-// We don't need to explicitly specify 'shoppingDone === true'
-if (shoppingDone) {
-  childsAllowance = 10;
-} else {
-  childsAllowance = 5;
-}
+// // We don't need to explicitly specify 'shoppingDone === true'
+// if (shoppingDone) {
+//   childsAllowance = 10;
+// } else {
+//   childsAllowance = 5;
+// }
 
-alert(childsAllowance);
+// alert(childsAllowance);
+
+// function setWeather() {
+//   const choice = select.value;
+
+//   switch (choice) {
+//     case "sunny":
+//       para.textContent =
+//         "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
+//       break;
+//     case "rainy":
+//       para.textContent =
+//         "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+//       break;
+//     case "snowing":
+//       para.textContent =
+//         "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+//       break;
+//     case "overcast":
+//       para.textContent =
+//         "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
+//       break;
+//     default:
+//       para.textContent = "";
+//   }
+// }
+
+// const select = document.querySelector("select");
+// const html = document.querySelector(".output");
+
+// select.addEventListener("change", () => {
+//   const choice = select.value;
+
+//   switch (choice) {
+//     case "white":
+//       update("white", "black");
+//       break;
+//     case "black":
+//       update("black", "white");
+//       break;
+//     case "purple":
+//       update("purple", "yellow");
+//       break;
+//     case "yellow":
+//       update("yellow", "purple");
+//   }
+// });
+
+// function update(bgColor, textColor) {
+//   html.style.backgroundColor = bgColor;
+//   html.style.color = textColor;
+// }
+
+//--------- More Conditional exercises -----------//
+// if (machineActive === "true") {
+//   if (score >= 0 && score <= 19) {
+//     response = "That was a terrible score — total fail!";
+//   } else if (score >= 20 && score <= 39) {
+//     response =
+//       "You know some things, but it's a pretty bad score. Needs improvement.";
+//   } else if (score >= 40 && score <= 69) {
+//     response = "You did a passable job, not bad!";
+//   } else if (score >= 70 && score <= 89) {
+//     response = "That's a great score, you really know your stuff.";
+//   } else {
+//     response = "What an amazing score! Did you cheat? Are you for real?";
+//   }
+// } else {
+//   response = "Machine is off";
+// }
+
+// let officialName = prompt("What is the official name of Javascript?", "");
+
+// if (officialName === "ECMAScript") {
+//   alert("Right!");
+// } else {
+//   alert("You don't know ECMAScript?");
+// }
+
+// officialName === "ECMAScript"
+//   ? alert("Right!")
+//   : alert("You don't know ECMAScript?");
+
+// let result = a + b < 4 ? "Below" : "Over";
+
+let login = prompt("What is your login?", "");
+
+let message =
+  login === "Employee"
+    ? "Hello"
+    : login === "Director"
+    ? "Greetings"
+    : login === ""
+    ? "No Login"
+    : "";
+
+alert(message);
