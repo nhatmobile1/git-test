@@ -112,15 +112,49 @@
 
 // let result = a + b < 4 ? "Below" : "Over";
 
-let login = prompt("What is your login?", "");
+// let login = prompt("What is your login?", "");
 
-let message =
-  login === "Employee"
-    ? "Hello"
-    : login === "Director"
-    ? "Greetings"
-    : login === ""
-    ? "No Login"
-    : "";
+// let message =
+//   login === "Employee"
+//     ? "Hello"
+//     : login === "Director"
+//     ? "Greetings"
+//     : login === ""
+//     ? "No Login"
+//     : "";
 
-alert(message);
+// alert(message);
+
+//------ Switch exercises -------//
+
+// let browser = prompt("What browser do you use?", "");
+
+// if (browser === "Edge") {
+//   alert("You've got the Edge!");
+// } else if (
+//   browser === "Chrome" ||
+//   browser === "Firefox" ||
+//   browser === "Safari" ||
+//   browser === "Opera"
+// ) {
+//   alert("Okay we support these browsers too");
+// } else {
+//   alert("We hope that this page looks ok!");
+// }
+
+// let a = +prompt("a?", "");
+
+// switch (a) {
+//   case 0:
+//     alert(0);
+//     break;
+
+//   case 1:
+//     alert(1);
+//     break;
+
+//   case 2:
+//   case 3:
+//     alert("2,3");
+//     break;
+// }
