@@ -159,8 +159,20 @@
 //     break;
 // }
 
-function getRandomDessert() {
-  const desserts = ["shokupan", "flan", "creme brulee"];
-  const randomIndex = Math.floor(Math.random() * desserts.length);
-  return desserts[randomIndex];
+let login = prompt("What is your login?");
+let password;
+
+if (login === "Admin") {
+  password = prompt("What is the password?");
+  if (password == "TheMaster") {
+    alert("Welcome!");
+  } else if (password === null || password === "") {
+    alert("Cancelled");
+  } else {
+    alert("Wrong password");
+  }
+} else if (login === null || login === "") {
+  alert("Cancelled");
+} else {
+  alert("I don't know you");
 }
