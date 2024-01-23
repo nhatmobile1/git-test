@@ -158,3 +158,9 @@
 //     alert("2,3");
 //     break;
 // }
+
+function getRandomDessert() {
+  const desserts = ["shokupan", "flan", "creme brulee"];
+  const randomIndex = Math.floor(Math.random() * desserts.length);
+  return desserts[randomIndex];
+}
