@@ -176,3 +176,15 @@ if (login === "Admin") {
 } else {
   alert("I don't know you");
 }
+
+let choice = "White";
+switch (choice) {
+  case White:
+    bgColor = "White";
+    textColor = "Black";
+    break;
+  case Black:
+    bgColor = "Black";
+    textColor = "White";
+    break;
+}
