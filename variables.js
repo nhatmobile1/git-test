@@ -158,33 +158,115 @@
 //     alert("2,3");
 //     break;
 // }
+//--------- More Conditional exercises -----------//
+// let login = prompt("What is your login?");
+// let password;
 
-let login = prompt("What is your login?");
-let password;
+// if (login === "Admin") {
+//   password = prompt("What is the password?");
+//   if (password == "TheMaster") {
+//     alert("Welcome!");
+//   } else if (password === null || password === "") {
+//     alert("Cancelled");
+//   } else {
+//     alert("Wrong password");
+//   }
+// } else if (login === null || login === "") {
+//   alert("Cancelled");
+// } else {
+//   alert("I don't know you");
+// }
 
-if (login === "Admin") {
-  password = prompt("What is the password?");
-  if (password == "TheMaster") {
-    alert("Welcome!");
-  } else if (password === null || password === "") {
-    alert("Cancelled");
-  } else {
-    alert("Wrong password");
-  }
-} else if (login === null || login === "") {
-  alert("Cancelled");
-} else {
-  alert("I don't know you");
-}
+// let choice = "White";
+// switch (choice) {
+//   case White:
+//     bgColor = "White";
+//     textColor = "Black";
+//     break;
+//   case Black:
+//     bgColor = "Black";
+//     textColor = "White";
+//     break;
+// }
 
-let choice = "White";
-switch (choice) {
-  case White:
-    bgColor = "White";
-    textColor = "Black";
+// let officialName = prompt("What is the 'official' name of JavaScript?");
+
+// if (officialName == "ECMAScript") {
+//   alert("Right!");
+// } else {
+//   alert("You don't know 'ECMAScript?");
+// }
+
+// let value = prompt("Enter a number");
+// let valueInt = Number(value);
+
+// if (valueInt > 0) {
+//   alert(1);
+// } else if (valueInt < 0) {
+//   alert(-1);
+// } else if (valueInt === 0) {
+//   alert(0);
+// }
+
+// let result = a + b < 4 ? "Below" : "Over";
+
+// let message =
+//   login == "Employee"
+//     ? "Hello"
+//     : login == "Director"
+//     ? "Greetings"
+//     : login == ""
+//     ? "No login"
+//     : "";
+
+//--------- Switch exercises -----------//
+// let a = 2 + 2;
+
+// switch (a) {
+//   case 3:
+//     alert("Too small");
+//     break;
+//   case 4:
+//     alert("Just right");
+//     break;
+//   case 5:
+//     alert("Too big");
+//     break;
+//   default:
+//     alert("I don't know such values");
+// }
+
+// let browser;
+
+// if (browser === "Edge") {
+//   alert("You've got the Edge!");
+// } else if (
+//   browser === "Chrome" ||
+//   browser === "Firefox" ||
+//   browser === "Safari" ||
+//   browser === "Opera"
+// ) {
+//   alert("Okay we support these browsers too");
+// } else {
+//   alert("We hope that this page looks ok!");
+// }
+
+let a = +prompt("a?", "");
+
+switch (a) {
+  case 0:
+    alert(0);
     break;
-  case Black:
-    bgColor = "Black";
-    textColor = "White";
+
+  case 1:
+    alert(1);
     break;
+
+  case 2:
+  case 3:
+    alert("2,3");
+    break;
+
+  default:
+    alert("other number");
 }
